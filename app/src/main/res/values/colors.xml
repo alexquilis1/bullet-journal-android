@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Colores de fondo y texto -->
+    <color name="background_color">#F5F5F5</color> <!-- Fondo suave -->
+    <color name="text_color">#333333</color> <!-- Texto oscuro y legible -->
+
+    <!-- Colores para los botones y elementos interactivos -->
+    <color name="button_color">#4CAF50</color> <!-- Verde suave para botones -->
+    <color name="button_text_color">#FFFFFF</color> <!-- Blanco para el texto de los botones -->
+
+    <!-- Color para el borde de entradas y secciones -->
+    <color name="entry_border_color">#DDDDDD</color> <!-- Gris claro para bordes -->
+
+
+</resources>
