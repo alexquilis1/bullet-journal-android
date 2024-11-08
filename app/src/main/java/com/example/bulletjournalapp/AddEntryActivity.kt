@@ -133,7 +133,7 @@ class AddEntryActivity : AppCompatActivity() {
                 openCamera() // Si se concede el permiso, abrir la cámara
             } else {
                 // Si el permiso es denegado, mostrar un mensaje al usuario
-                Toast.makeText(this, "Camera permission is required", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Camera permission is required to take a photo", Toast.LENGTH_SHORT).show()
             }
         }
     }
