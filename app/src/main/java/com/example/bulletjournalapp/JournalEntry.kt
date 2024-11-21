@@ -12,14 +12,14 @@ data class JournalEntry(
     @ColumnInfo(name = "title") val title: String,
     @ColumnInfo(name = "description") val description: String,
     @ColumnInfo(name = "date") val date: String,
-    @ColumnInfo(name = "image_uri") val imageUri: String? = null
+    @ColumnInfo(name = "image_uri") val imageUri: String? = null // This will store the Base64 string
 ) : Parcelable {
     constructor(parcel: Parcel) : this(
         parcel.readInt(),
         parcel.readString() ?: "",
         parcel.readString() ?: "",
         parcel.readString() ?: "",
-        parcel.readString()
+        parcel.readString() ?: "" // Reading the Base64 string from the Parcel
     )
 
     override fun writeToParcel(parcel: Parcel, flags: Int) {
@@ -27,7 +27,7 @@ data class JournalEntry(
         parcel.writeString(title)
         parcel.writeString(description)
         parcel.writeString(date)
-        parcel.writeString(imageUri)
+        parcel.writeString(imageUri) // Writing the Base64 string to the Parcel
     }
 
     override fun describeContents(): Int = 0

@@ -1,20 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".MainActivity"
     android:background="@color/background_color"> <!-- Fondo suave -->
 
+    <!-- RecyclerView con ajuste para el espacio disponible -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="16dp"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
         android:layout_marginTop="26dp"
+        android:layout_marginBottom="80dp"
+        android:padding="16dp"
         android:clipToPadding="false" /> <!-- Evitar que el padding sea cortado -->
 
+    <!-- TextView para el mensaje "No entries yet" -->
+    <TextView
+        android:id="@+id/noEntriesTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="No entries yet"
+        android:textSize="18sp"
+        android:visibility="gone"
+        android:textColor="@android:color/darker_gray"
+        android:gravity="center"
+        android:padding="16dp"/>
+
+    <!-- FloatingActionButton para añadir entradas -->
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/addEntryButton"
         android:layout_width="wrap_content"
@@ -24,6 +42,5 @@
         android:layout_margin="16dp"
         android:src="@drawable/ic_add"
         android:backgroundTint="@color/button_color" /> <!-- Usamos el color del botón -->
-
 
 </RelativeLayout>

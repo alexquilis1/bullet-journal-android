@@ -2,6 +2,11 @@
 <resources>
     <!-- Colores de fondo y texto -->
     <color name="background_color">#F5F5F5</color> <!-- Fondo suave -->
+
+    <color name="background_color_toolbar">#E0E0E0</color> <!-- Gris muy claro -->
+    <color name="border_color_toolbar">#B0BEC5</color> <!-- Gris suave más oscuro -->
+_
+
     <color name="text_color">#333333</color> <!-- Texto oscuro y legible -->
 
     <!-- Colores para los botones y elementos interactivos -->

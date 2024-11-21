@@ -17,4 +17,16 @@ class JournalViewModel(application: Application) : AndroidViewModel(application)
             journalDao.insertEntry(entry)
         }
     }
+
+    fun updateEntry(entry: JournalEntry) {
+        viewModelScope.launch {
+            journalDao.updateEntry(entry)
+        }
+    }
+
+    fun deleteEntry(entry: JournalEntry) {
+        viewModelScope.launch {
+            journalDao.deleteEntry(entry)
+        }
+    }
 }

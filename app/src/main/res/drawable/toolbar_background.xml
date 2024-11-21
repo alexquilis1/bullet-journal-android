@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/background_color_toolbar"/> <!-- Color del fondo del Toolbar -->
+    <corners android:radius="20dp"/> <!-- Bordes redondeados -->
+    <stroke android:color="@color/background_color_toolbar" android:width="2dp"/> <!-- Borde -->
+</shape>

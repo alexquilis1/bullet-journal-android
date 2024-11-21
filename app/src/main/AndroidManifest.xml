@@ -32,12 +32,13 @@
             </intent-filter>
         </activity>
 
+
         <!-- AddEntryActivity declaration -->
         <activity
             android:name=".AddEntryActivity"
             android:exported="true"
             android:label="@string/add_entry_activity_title"
-            android:theme="@style/Theme.AppCompat.Light" />
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
 
     </application>
 

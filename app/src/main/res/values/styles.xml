@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Estilo personalizado para el Toolbar -->
+    <style name="CustomToolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="android:background">@drawable/toolbar_background</item> <!-- Fondo del Toolbar -->
+        <item name="android:titleTextColor">@color/text_color</item> <!-- Color del texto -->
+        <item name="android:textSize">24sp</item> <!-- Tamaño del texto para el título -->
+        <item name="android:textStyle">bold</item> <!-- Título en negrita -->
+        <item name="android:letterSpacing">0.1</item> <!-- Espaciado entre letras -->
+        <item name="android:windowTranslucentStatus">true</item>
+
+    </style>
+
+</resources>
